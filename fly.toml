@@ -1,0 +1,18 @@
+app = "charla-libre"
+primary_region = "gru"
+
+[build]
+
+[env]
+  PORT = "3000"
+  DB_PATH = "/data/charla-libre.db"
+
+[mounts]
+  source = "charla_libre_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false
+  min_machines_running = 1
