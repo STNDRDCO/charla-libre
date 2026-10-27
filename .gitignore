@@ -1,3 +1,6 @@
 node_modules
-data/
+.next
 .env
+.env*.local
+.vercel
+.pgtest
